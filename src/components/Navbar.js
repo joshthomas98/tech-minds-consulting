@@ -84,7 +84,7 @@ const NavbarComponent = () => {
               width="250"
               height="250"
               className="d-inline-block align-top mb-5 mt-3"
-              alt="Pacific Fitness Logo"
+              alt="Tech Minds Logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav">
