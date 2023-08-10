@@ -1,8 +1,36 @@
 * {
-  background-color: #b9bac1;
+  background-color: #fff;
 }
 
 /* Navbar */
 .gold-text-navbar .nav-link {
   color: #fff;
+}
+
+/* Homepage */
+.homepage-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer; /* Add this line to change the cursor to a pointer */
+}
+
+.homepage-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Social media icons */
+.facebook-icon:hover {
+  color: #1877f2; /* Facebook official color */
+}
+
+.instagram-icon:hover {
+  color: #e1306c; /* Instagram official color */
+}
+
+.twitter-icon:hover {
+  color: #1da1f2; /* Twitter official color */
+}
+
+.youtube-icon:hover {
+  color: #ff0000; /* YouTube official red color */
 }

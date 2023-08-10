@@ -92,12 +92,12 @@ const NavbarComponent = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ml-auto align-items-center">
-              <Nav.Link style={{ fontSize: "22px", color: "#fff" }} href="/">
+              <Nav.Link style={{ fontSize: "22px", color: "#48A2D9" }} href="/">
                 Home
               </Nav.Link>
 
               <Nav.Link
-                style={{ fontSize: "22px", color: "#fff" }}
+                style={{ fontSize: "22px", color: "#48A2D9" }}
                 href="/aboutus"
               >
                 About Us
@@ -106,24 +106,24 @@ const NavbarComponent = () => {
               <Dropdown as={Nav.Item}>
                 <Dropdown.Toggle
                   as={Nav.Link}
-                  style={{ fontSize: "22px", color: "#fff" }}
+                  style={{ fontSize: "22px", color: "#48A2D9" }}
                 >
                   Our Services
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="/webdesignanddevelopment">
-                    Web Design and Development
+                  <Dropdown.Item href="/web-development">
+                    Web Development
                   </Dropdown.Item>
-                  <Dropdown.Item href="/techconsultancy">
+                  <Dropdown.Item href="/tech-consultancy">
                     Tech Consultancy
                   </Dropdown.Item>
-                  <Dropdown.Item href="/virtualcto">Virtual CTO</Dropdown.Item>
+                  <Dropdown.Item href="/virtual-cto">Virtual CTO</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
 
               <Nav.Link
-                style={{ fontSize: "22px", color: "#fff" }}
-                href="/contact"
+                style={{ fontSize: "22px", color: "#2AB8E3" }}
+                href="/contactform"
               >
                 Contact
               </Nav.Link>
@@ -138,11 +138,7 @@ const NavbarComponent = () => {
                   />
                 </Col>
                 <Col xs="auto">
-                  <BsSearch
-                    type="submit"
-                    size={24}
-                    className="text-white mt-2"
-                  />
+                  <BsSearch type="submit" size={24} className="mt-2" />
                 </Col>
               </Row>
             </Form>

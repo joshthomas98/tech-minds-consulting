@@ -4,8 +4,8 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 const SocialMediaIcons = ({ size }) => {
   return (
     <div
-      className="d-flex pt-3 social-media-icons-container justify-content-center text-light"
-      style={{ color: "#eccf42" }}
+      className="d-flex pt-3 social-media-icons-container justify-content-center"
+      style={{ color: "#000000" }}
     >
       <a
         target={"_blank"}

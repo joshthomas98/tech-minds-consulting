@@ -14,12 +14,12 @@ function CenteredCarousel() {
         <Carousel.Item>
           <img
             className="d-block mx-auto"
-            src="../../images/web-dev.jpg"
+            src="../../images/web-development-images/web-dev-carousel.jpg"
             alt="First slide"
             style={{ maxWidth: "1170px", maxHeight: "600px" }}
           />
-          <h3 className="pt-3 text-light text-center">Web Development</h3>
-          <p className="px-3 text-light text-center">
+          <h3 className="pt-3 text-center">Web Development</h3>
+          <p className="px-3 text-center">
             Unleashing Creativity Through Innovative Web Solutions.<br></br>{" "}
             From Eye-Catching Designs to Seamless Functionality, We Build Your
             Online Presence.
@@ -29,13 +29,13 @@ function CenteredCarousel() {
         <Carousel.Item>
           <img
             className="d-block mx-auto"
-            src="../../images/tech-consultancy.jpg"
+            src="../../images/tech-consultancy-images/tech-consultancy-carousel.jpg"
             alt="Second slide"
             style={{ maxWidth: "1170px", maxHeight: "600px" }}
           />
-          <h3 className="pt-3 text-light text-center">Tech Consultancy</h3>
+          <h3 className="pt-3 text-center">Tech Consultancy</h3>
           <div className="container">
-            <p className="px-3 text-light text-center">
+            <p className="px-3 text-center">
               Navigating the Technological Landscape.<br></br> Our Consultancy
               Services Offer Expert Insights, Strategic Planning, and
               Cutting-Edge Solutions to Propel Your Business Forward.
@@ -46,12 +46,12 @@ function CenteredCarousel() {
         <Carousel.Item>
           <img
             className="d-block mx-auto"
-            src="../../images/virtual-cto.jpg"
+            src="../../images/virtual-cto-images/virtual-cto-carousel.jpg"
             alt="Third slide"
             style={{ maxWidth: "1170px", maxHeight: "600px" }}
           />
-          <h3 className="pt-3 text-light text-center">Virtual CTO</h3>
-          <p className="px-3 text-light text-center">
+          <h3 className="pt-3 text-center">Virtual CTO</h3>
+          <p className="px-3 text-center">
             Empowering Your Vision with Virtual CTO Expertise.<br></br> Let Us
             Be Your Technology Partner, Providing Leadership, Strategy, and
             Technical Excellence to Drive Success.

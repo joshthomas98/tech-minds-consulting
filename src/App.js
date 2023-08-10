@@ -7,6 +7,10 @@ import Footer from "./components/Footer";
 
 import SocialMediaIcons from "./components/SocialMediaIcons";
 import Homepage from "./pages/Homepage";
+import WebDevelopment from "./pages/WebDevelopment";
+import TechConsultancy from "./pages/TechConsultancy";
+import VirtualCTO from "./pages/VirtualCTO";
+import ContactForm from "./pages/ContactForm";
 
 const App = () => {
   return (
@@ -15,6 +19,14 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route index element={<Homepage />} />
+
+          <Route path="web-development" element={<WebDevelopment />} />
+
+          <Route path="tech-consultancy" element={<TechConsultancy />} />
+
+          <Route path="virtual-cto" element={<VirtualCTO />} />
+
+          <Route path="contactform" element={<ContactForm />} />
         </Routes>
         <Footer />
       </Container>

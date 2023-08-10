@@ -18,28 +18,35 @@ import SocialMediaIcons from "./SocialMediaIcons";
 
 export default function App() {
   return (
-    <div className="text-light">
-      <MDBFooter className="text-center" color="white" bgColor="dark">
+    <div>
+      <MDBFooter className="text-center">
         <MDBContainer className="p-4">
           <MDBRow className="justify-content-between align-items-center">
             <MDBCol md="4">
-              <p className="pt-3">
-                <i className="bi-telephone-fill"></i> 01443 843230
+              <p className="pt-3" style={{ color: "#48A2D9" }}>
+                <i
+                  className="bi-telephone-fill"
+                  style={{ color: "#48A2D9" }}
+                ></i>{" "}
+                07970 194666
               </p>
             </MDBCol>
             <MDBCol md="4">
               <SocialMediaIcons />
             </MDBCol>
             <MDBCol md="4">
-              <p className="pt-3">
-                <i className="bi bi-envelope"></i> info@pacificfitness.co.uk
+              <p className="pt-3" style={{ color: "#48A2D9" }}>
+                <i className="bi bi-envelope" style={{ color: "#48A2D9" }}></i>{" "}
+                info@techminds.co.uk
               </p>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
-        <div className="text-center pb-2">
+        <div className="text-center pb-2" style={{ color: "#48A2D9" }}>
           © 2023 Copyright {""}
-          <a href="http://localhost:3000/">Tech Minds Consulting</a>
+          <a href="http://localhost:3000/" style={{ color: "#48A2D9" }}>
+            Tech Minds Consulting
+          </a>
           <p className="pt-1">
             Designed and Developed by Tech Minds Consulting
           </p>

@@ -1,53 +1,74 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Carousel from "../components/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell, faHandshake } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
+  const navigate = useNavigate(); // Use useNavigate
+
+  const handleBoxClick = (page) => {
+    if (page === "web-development") {
+      navigate("/web-development");
+    } else if (page === "tech-consultancy") {
+      navigate("/tech-consultancy");
+    } else if (page === "virtual-cto") {
+      navigate("/virtual-cto");
+    }
+  };
+
   return (
-    <div className="text-light">
+    <div>
       <Container>
         {/* Carousel section */}
         <section>
           <Carousel />
         </section>
 
-        <section className="text-center">
-          <p>
-            Welcome to Tech Minds Consulting, your partner in unlocking
-            strategic success through our proven expertise in the realm of
-            technology. Specializing in web development, tech consultancy, and
-            virtual CTO services, we empower businesses to achieve unparalleled
-            results in today's era of digital evolution.
-          </p>
+        <section className="text-center lead pt-4">
+          <div className="container">
+            <p>
+              Welcome to Tech Minds Consulting, your partner in unlocking
+              strategic success through our proven expertise in the realm of
+              technology. Specialising in web development, tech consultancy, and
+              virtual CTO services, we empower businesses to achieve
+              unparalleled results in today's era of digital evolution.
+            </p>
 
-          <p>
-            Boasting a rich background across diverse industries and
-            collaborating with some of the UK's most renowned brands, we craft
-            tailor-made enterprise solutions that seamlessly fuse technology
-            with innovation. With a legacy spanning over three decades in the IT
-            sector, we possess the knowledge to seamlessly integrate existing
-            legacy systems into cutting-edge cloud-based software services.
-            Furthermore, our capability extends to the creation of bespoke
-            solutions meticulously tailored to address your unique requirements.
-          </p>
+            <p>
+              Boasting a rich background across diverse industries and
+              collaborating with some of the UK's most renowned brands, we craft
+              tailor-made enterprise solutions that seamlessly fuse technology
+              with innovation. With a legacy spanning over three decades in the
+              IT sector, we possess the knowledge to seamlessly integrate
+              existing legacy systems into cutting-edge cloud-based software
+              services. Furthermore, our capability extends to the creation of
+              bespoke solutions meticulously tailored to address your unique
+              requirements.
+            </p>
 
-          <p>
-            At Tech Minds Consulting, we transcend mere consultation; we are
-            architects of transformation. Join us in propelling your business
-            towards a future where digital capability is not just an advantage,
-            but a necessity.
-          </p>
+            <p>
+              At Tech Minds Consulting, we transcend mere consultation; we are
+              architects of transformation. Join us in propelling your business
+              towards a future where digital capability is not just an
+              advantage, but a necessity.
+            </p>
+          </div>
         </section>
 
         {/* Info boxes section */}
-        <section id="functionality-boxes" className="p-5">
-          <h2 className="text-center pb-2">Our primary services include...</h2>
+        <section id="functionality-boxes" className="card-1 p-5">
+          <h2 className="text-center pb-4 pt-2">
+            Our primary services include...
+          </h2>
           <div className="container">
             <div className="row text-center g-4">
               <div className="col-md">
-                <div className="homepage-card bg-secondary text-light border">
+                <div
+                  className="homepage-card bg-secondary border"
+                  onClick={() => handleBoxClick("web-development")}
+                >
                   <div className="card-body text-center p-3">
                     <div className="h1 mb-3">
                       <i className="bi bi-laptop"></i>
@@ -65,7 +86,10 @@ const Homepage = () => {
               </div>
 
               <div className="col-md">
-                <div className="homepage-card bg-secondary text-light border">
+                <div
+                  className="homepage-card bg-secondary border"
+                  onClick={() => handleBoxClick("tech-consultancy")}
+                >
                   <div className="card-body text-center p-3">
                     <div className="h1 mb-3">
                       <FontAwesomeIcon icon={faHandshake} />
@@ -84,7 +108,10 @@ const Homepage = () => {
               </div>
 
               <div className="col-md">
-                <div className="homepage-card bg-secondary text-light border">
+                <div
+                  className="homepage-card bg-secondary border"
+                  onClick={() => handleBoxClick("virtual-cto")}
+                >
                   <div className="card-body text-center p-3">
                     <div className="h1 mb-3">
                       <i className="bi bi-globe"></i>
@@ -100,6 +127,9 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
+              <p>
+                Interested in our services? Click one of them to find out more.
+              </p>
             </div>
           </div>
         </section>
