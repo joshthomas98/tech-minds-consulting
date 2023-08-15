@@ -16,6 +16,9 @@ const Homepage = () => {
     } else if (page === "virtual-cto") {
       navigate("/virtual-cto");
     }
+
+    // Scroll to the top of the new page with smooth scrolling
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -26,17 +29,32 @@ const Homepage = () => {
           <Carousel />
         </section>
 
-        <section className="text-center lead pt-4">
-          <div className="container">
-            <p>
+        <section
+          className="about-section text-center lead"
+          style={{
+            backgroundColor: "#DCEFFB",
+            width: "100%",
+          }}
+        >
+          <div
+            style={{
+              position: "relative", // Make the container positioned
+              backgroundColor: "#DCEFFB", // Set the background color
+              zIndex: 1, // Set a higher z-index to place it behind the text
+              padding: "20px", // Add padding for spacing
+              borderRadius: "10px", // Add border radius for styling
+              color: "#000000", // Set text color to white for contrast
+            }}
+          >
+            <p style={{ backgroundColor: "#DCEFFB" }}>
               Welcome to Tech Minds Consulting, your partner in unlocking
               strategic success through our proven expertise in the realm of
-              technology. Specialising in web development, tech consultancy, and
+              technology. Specializing in web development, tech consultancy, and
               virtual CTO services, we empower businesses to achieve
               unparalleled results in today's era of digital evolution.
             </p>
 
-            <p>
+            <p style={{ backgroundColor: "#DCEFFB" }}>
               Boasting a rich background across diverse industries and
               collaborating with some of the UK's most renowned brands, we craft
               tailor-made enterprise solutions that seamlessly fuse technology
@@ -48,7 +66,7 @@ const Homepage = () => {
               requirements.
             </p>
 
-            <p>
+            <p style={{ backgroundColor: "#DCEFFB" }}>
               At Tech Minds Consulting, we transcend mere consultation; we are
               architects of transformation. Join us in propelling your business
               towards a future where digital capability is not just an

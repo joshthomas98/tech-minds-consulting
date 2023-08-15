@@ -11,6 +11,7 @@ import WebDevelopment from "./pages/WebDevelopment";
 import TechConsultancy from "./pages/TechConsultancy";
 import VirtualCTO from "./pages/VirtualCTO";
 import ContactForm from "./pages/ContactForm";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   return (
@@ -27,6 +28,8 @@ const App = () => {
           <Route path="virtual-cto" element={<VirtualCTO />} />
 
           <Route path="contactform" element={<ContactForm />} />
+
+          <Route path="aboutus" element={<AboutUs />} />
         </Routes>
         <Footer />
       </Container>

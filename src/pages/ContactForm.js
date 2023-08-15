@@ -59,7 +59,7 @@ const ContactForm = () => {
           </Row>
           <Row>
             <Col>
-              <Form.Group controlId="email">
+              <Form.Group className="pt-3" controlId="email">
                 <Form.Label>Email</Form.Label>
                 <Form.Control
                   type="email"
@@ -72,7 +72,7 @@ const ContactForm = () => {
           </Row>
           <Row>
             <Col>
-              <Form.Group controlId="message">
+              <Form.Group className="pt-3" controlId="message">
                 <Form.Label>What can we help you with?</Form.Label>
                 <Form.Control
                   as="textarea"
